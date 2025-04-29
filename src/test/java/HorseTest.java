@@ -3,11 +3,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.MockedStatic;
-<<<<<<< HEAD
-
-=======
-import org.mockito.Mockito;
->>>>>>> 3f9a013fefd6d02b8286dfbaec32c8ee5efd288e
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mockStatic;
@@ -65,8 +60,6 @@ public class HorseTest {
         assertEquals(5, horse.getDistance());
     }
 
-<<<<<<< HEAD
-
     @Test
     void moveUseGetRandomTest() {
         try (MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)) {
@@ -88,14 +81,13 @@ public class HorseTest {
             assertEquals(56 + 31 * random, horse.getDistance());
         }
     }
-=======
+
     @Disabled
     @Test
-    void moveTest(){
-        try (MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)){
-            new Horse("F", 4,5).move();
+    void moveTest() {
+        try (MockedStatic<Horse> mockedStatic = mockStatic(Horse.class)) {
+            new Horse("F", 4, 5).move();
             mockedStatic.verify(() -> Horse.getRandomDouble(0.2, 0.9));
         }
     }
->>>>>>> 3f9a013fefd6d02b8286dfbaec32c8ee5efd288e
 }
