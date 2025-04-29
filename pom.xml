@@ -43,7 +43,6 @@
             <scope>test</scope>
         </dependency>
 
-<<<<<<< HEAD
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -56,8 +55,6 @@
             <version>2.17.2</version>
         </dependency>
 
-=======
->>>>>>> 3f9a013fefd6d02b8286dfbaec32c8ee5efd288e
     </dependencies>
 
 </project>
